@@ -1,0 +1,4 @@
+#!/usr/bin/with-contenv bash
+
+# Remove chown for netbootxyz bind
+sed '/chown -R abc:abc \/assets/d' /etc/cont-init.d/20-nginx-config
